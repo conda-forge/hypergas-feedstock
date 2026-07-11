@@ -1,14 +1,14 @@
 {% set name = "hypergas" %}
-{% set version = "0.6.1" %}
+{% set version = "1.0" %}
 {% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hypergas-{{ version }}.tar.gz
-  sha256: 63e84b918e809abc356ebfc9a8ae2df0d2206d23de4a88b4bc58663b00fa494a
+  sha256: e095d4f3eccaccd23aac86dc206f964e05ad0b43afdec7d42d132a22ccc7ecb9
 
 build:
   noarch: python
